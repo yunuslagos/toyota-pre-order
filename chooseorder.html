@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHOOSE & BUY TOYOTA</title>
+</head>
+<body style="background-color:darkblue ;">
+  <header style="color: rgb(105, 105, 105);">
+    <h1><strong>CHOOSE & BUY TOYOTA</strong></h1>
+  <img src="https://www.toyota.com/imgix/responsive/images/gallery/photos-videos/2021/4runner/FRN_MY20_0115_V002.png?w=1440&q=90&fm=jpg&fit=max&cs=strip&bg=fff&auto=compress" alt="4RUNNER" style="width:900px;height:400px;/>
+  </header>
+  <main>
+    <form action="./chooseorder.html" method="POST">
+      <section>
+        <label for="select_car"; style="color:firebrick">CHOOSE CAR MODEL</label><br>
+        <select id="select_car">
+          <option value="corolla">COROLLA</option>
+          <option value="thundra">THUNDRA</option>
+          <option value="4runner">4RUNNER</option>
+        </select>
+      </section>
+      <br>
+      <section>
+        <label for="carcolor"; style="color:deeppink">COLOR</label><br>
+        <input id="carcolor" type="text" list="car_color_list" name="carcolor"/>
+        <datalist id="car_color_list">
+          <option value="red">red</option>
+          <option value="grey">GREY</option>
+          <option value="green">GREEN</option>
+        </datalist>
+      </section>
+      <br>
+      <section>
+        <label for="transmission"; style="color:firebrick">TRANSMISSION</label><br>
+        <select id="transmission">
+          <option value="manuel">6 SPEEDS MANUEL</option>
+          <option value="automatic">AUTOMATIC</option>
+          <option value="eccvt">ECCVT</option>
+        </select>
+      </section>
+      <br>
+      <section>
+        <label for="fuel_engine"; style="color:firebrick">FUEL AND ENGINE</label><br>
+        <input id="fuel_engine"type="text" list="list_engine_fuel" name="fuel_engine"/>
+        <datalist id="list_engine_fuel">
+          <option value="1.8_lt_hybrid">1.8 LT HYBRID</option>
+          <option value="1.8_lt_fuel">1.8 LT FUEL</option>
+          <option value="2.0_lt_4">2.0LT 4-CYLINDER</option>
+          <option value="4.0_lt_V6">4x4 4.0 LT V6 ENGINE</option>
+        </datalist>
+      </section>
+      <br>
+      <section style="color:firebrick">
+        <label for="price">CHOOSE PRICE:</label><br>
+        <span style="color:fuchsia">LOW PRICE</span>
+        <input type="range" min="25000" max="75000" step="3" name="price">
+        <span style="color:fuchsia">HIGH PRICE</span>
+      </section>
+      <br>
+      <section>
+        <label style="color:firebrick" for="interior">SELECT INTERIOR</label>
+        <br>
+        <input id="leather_seat" type="checkbox" value="leather_seat" name="interior"/>
+        <label style="color:fuchsia" for="leather_seat">LEATHER SEAT</label>
+        <br>
+        <input id="sunroof" type="checkbox" value="sunroof" name="interior"/>
+        <label style="color:fuchsia" for="sunroof">SUNROOF</label>
+        <br>
+        <input id="multimedia" type="checkbox" value="multimedia" name="interior"/>
+        <label style="color:fuchsia" for="multimedia">AUDI & MULTIMEDIA SYSTEM</label>
+        <br>
+      </section>
+      <br>
+      <section>
+        <label style="color:lime" for="">WOULD YOU LIKE TO APPLY A LOAN FOR BUY CAR?</label><br>
+        <input id="loan" type="radio" name="loan" value="yes" checked/>
+        <label style="color:deeppink" for="loan">YES PLEASE</label>
+        <input id="no_loan" type="radio" name="loan" value="no" checked/>
+        <label style="color:deeppink" for="no_loan">NO! THANKS</label>
+      </section>
+      <br>
+      <section>
+        <button>BUY YOUR TOYOTA</button>
+      </section>
+    </form>
+  </main>
+  <hr>
+  <footer style="color:firebrick">
+    &copy; 2020 TOYOTA
+  </footer>
+</body>
+</html>
